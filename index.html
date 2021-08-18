@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <heade>
+        <meta charset="utf-8">
+        <link rel="icon" href="/img/favicon.png">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <title>Leo dev.</title>
+        <link rel="stylesheet" href="style.css">  
+    </heade>
+    <body>
+        <div class="container">
+            <div class="info">
+                <div class="titlestatus">DevOps</div>
+                <img src="/img/euteste1.png"/>
+                <div class="infoTitle">Leônidas Roberto B.J</div>
+                <p >
+                    Olá, bem vindo ao meu site pessoal, 
+                    sou desenvolvedor <strong>DevOps</strong>, formado 
+                    em segurança da informação e atualmente trabalho na 
+                    <strong>BeatLab</strong> Fábrica de Softwares, também
+                    sou freelancer e além desse site que você está
+                    agora tenho outros projetos pessoais, veja alguns ao lado.
+                </p>
+                <hr class="separator">
+                <div class="infoTitle">
+                    Linguagens e Tecnologias que já trabalhei
+                </div>
+                <div class="infoText2">
+                    Golang, JavaScript, Java, Spring-Boot, Python3, C++, AWS DinamoDB, Postgres, ShellScript, React-Native,
+                    React, CSS, HTML, Docker, LINUX, GraphQL, AWS Cloud.
+                </div>
+            </div>
+            <div class="footer">
+                Obrigado pela visita, veja alguns dos meus códigos no link abaixo.<br/>
+                <a href="#">github.com</a>
+            </div>
+            <div class="viewprojects">
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slideInfo">
+                                <strong>Request Reader:</strong> Ferramenta online que possibilita a visualização
+                                de requisições. Para usar a ferramenta basta gerar uma URL aleatória e começar a utilizar.<br/>
+                                <strong>Front-End: React, Back-End: Java Spring.</strong> 
+                                <a href="#">Acesse aqui</a>
+                            </div>
+                        <img src="projects/15.png" id="image" data-magnify-src="projects/15.png"/>
+                        </div>
+                        <div class="swiper-slide">
+                        <img src="projects/22.png" />
+                        </div>
+                        <div class="swiper-slide">
+                        <img src="projects/14.png" />
+                        </div>
+                        <div class="swiper-slide">
+                        <img src="projects/16.png" />
+                        </div>
+                        <div class="swiper-slide">
+                        <img src="projects/18.png" />
+                        </div>
+                        <div class="swiper-slide">
+                        <img src="projects/17.png" />
+                        </div>
+                        <div class="swiper-slide">
+                        <img src="projects/19.png" />
+                        </div>
+                        <div class="swiper-slide">
+                        <img src="projects/20.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="projects/21.png" />
+                        </div>
+                    </div>
+                </div>
+                 <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                             <div class="slideInfo">
+                                <strong>Server Monitor:</strong> Sistema simples de monitoramento de servidores.
+                                além de gráficos que mostram em tempo real a utilização de recursos da máquina
+                                é possível visualizar os serviços sendo executados no momento, o sistema também
+                                armazena o histórico de utilização da máquina além de outras funções. Feito para servidores Linux.
+                                <br/>
+                                <strong>Front-End: React, Back-End: Golang, PostgreSQL Docker.</strong> 
+                                <a href="#">Não está online :(</a>
+                            </div>
+                        <img src="projects/1.png" />
+                        </div>
+                        <div class="swiper-slide">
+                        <img src="projects/2.png" />
+                        </div>
+                        <div class="swiper-slide">
+                        <img src="projects/3.png" />
+                        </div>
+                        <div class="swiper-slide">
+                        <img src="projects/4.png" />
+                        </div>
+                        <div class="swiper-slide">
+                        <img src="projects/5.png" />
+                        </div>
+                        <div class="swiper-slide">
+                        <img src="projects/6.png" />
+                        </div>
+                        <div class="swiper-slide">
+                        <img src="projects/7.png" />
+                        </div>
+                        <div class="swiper-slide">
+                        <img src="projects/8.png" />
+                        </div>
+                        <div class="swiper-slide">
+                        <img src="projects/9.png" />
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            
+            ///Cube
+            /*
+            var swiper = new Swiper(".mySwiper", {
+                effect: "cube",
+                grabCursor: true,
+                cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+                },
+                pagination: {
+                el: ".swiper-pagination",
+                },
+            });
+            */
+            
+            ////Old
+            var swiper = new Swiper(".mySwiper", {
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
+                coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+                },
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                el: ".swiper-pagination",
+                },
+            });
+        
+        </script>
+        
+    </body>
+    <script src="script.js"></script>
+        
+</html>

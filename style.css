@@ -1,0 +1,215 @@
+body {
+    background-color: #757575;
+    color: lightgrey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    background-color: #696969;
+    border: none;    
+    height: 1px;
+    width: 100%;
+}
+
+.titlestatus {
+    text-shadow: 0 0 10px rgb(47, 255, 210),
+    0 0 20px rgb(47, 255, 210),
+    0 0 30px rgb(47, 255, 210),
+    0 0 40px rgb(47, 255, 210),
+    0 0 50px rgb(47, 255, 210),
+    0 0 60px rgb(47, 255, 210),
+    0 0 70px rgb(47, 255, 210),
+    0 0 80px rgb(47, 255, 210),
+    0 0 90px rgb(47, 255, 210),
+    0 0 100px rgb(47, 255, 210);
+    color:white;
+    font-size: 40px;
+}
+
+/*Scroll*/
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #263238;
+}
+::-webkit-scrollbar-thumb {
+    background: #8888;
+    border-radius: 60px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #eceff1;
+}
+
+
+.container {
+    display: grid;    
+    grid-template-columns: 250px auto 25%;
+    grid-template-rows: 250px auto 50px;
+    height: 100vh;
+}
+
+.infoTitle {
+    font-size: 20px;
+    text-align: center;
+}
+
+.infoText {
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+.infoText2 {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.button {
+    background-color: grey;
+    color:white;
+    font-size: 30px;
+    border-radius: 20px;
+    padding: 5px 15px 5px 15px;
+    box-shadow: 3px 15px 10px rgba(0,0,0,0,0.5);
+    border: 1px;
+    border-color: black;
+}
+
+.button:hover {
+    background-color: white;
+    color:black;
+    cursor: pointer;
+}
+
+.viewprojects {
+    grid-column: 2/2;
+    grid-row: 1/2;
+    overflow:auto; 
+    height: 96vh;
+    width: 100%;
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+
+.info {
+    background-color: #263238;
+    height: 90vh;
+    padding: 30px;
+    grid-column: 1 / 1;
+    grid-row: 1 / 2;
+    text-align: center;
+    overflow:auto; 
+}
+
+.info h1 {
+    font-weight: bold;
+}
+
+.info p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: lightgrey;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.info h5 {
+    color: lightgrey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: none;
+}
+
+.info img {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.footer {
+    z-index: 2;
+    position: absolute;
+    background-color: #212121;
+    color: rgb(170, 170, 170);
+    text-align: center;
+    padding: 8px;
+    grid-column: 1/3;
+    grid-row: 3/3;
+    width: 100vw;
+    margin: none;
+    position: sticky;
+    text-justify: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.swiper-container {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 1200px;
+    height: 600px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0,0.5);
+    margin-bottom: 60px;
+}
+
+.swiper-slide img {
+    display: block;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.slideInfo {
+    background-color: rgba(7, 7, 7, 0.5);
+    padding: 15px;
+    color: white;
+    position: absolute;
+    margin: 42% 20px 0 20px;
+    text-shadow: 0 5px 10px rgba(0,0,0,0,0.5);
+    font-size: 20px;   
+}
+
+
+.slideInfo strong {
+    color: #e1f5fe;
+}
+
+.slideInfo a {
+    text-decoration: none;
+    color: white;
+    background-color: royalblue;
+    padding: 2px 15px 2px 15px;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);       
+}
+
+.slideInfo a:hover {
+    background-color: rgb(4, 211, 90);
+}
+
+
+.lupa {
+    z-index:2;
+    display: block;
+    padding: 60px;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    border: solid;
+    border-width: 5px;
+    border-color: white;
+}
